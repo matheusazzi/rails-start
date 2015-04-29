@@ -62,14 +62,12 @@ As for right now we are using heroku as a staging deployment server.
 Once the local repo is configured, and the heroku remote repo is in place,
 the local repository can be used to make the deploy by:
 
-### Staging
-
 Commit and push to repository all your changes, then:
 
 ```
-rake deploy:staging
+./bin/rake deploy:staging
 # or
-rake deploy:production
+./bin/rake deploy:production
 ```
 
 ## Test
@@ -77,5 +75,5 @@ rake deploy:production
 To test Ruby and Javascript run:
 
 ```
-rake
+./bin/rake
 ```
