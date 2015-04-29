@@ -1,0 +1,63 @@
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-field {
+  width: 100%;
+  height: rem(35px);
+  border: 2px solid $color-gray-light;
+  border-radius: 4px;
+  font-size: rem(14px);
+  color: $color-gray;
+  line-height: 1.2;
+  padding: rem(10px);
+  background: $color-white;
+  margin: 0 0 14px;
+  transition: border-color 200ms;
+
+  &:hover {
+    border-color: $color-gray;
+  }
+
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  @include placeholder {
+    color: $color-gray-light;
+    opacity: 1;
+  }
+
+  &.placeholder {
+    color: $color-gray-light;
+  }
+
+  &.has-error {
+    border-color: $color-error;
+  }
+
+  &.has-success {
+    border-color: $color-success;
+  }
+
+  &--text {
+    min-height: 100px;
+  }
+}
+
+.form-field:disabled,
+:disabled .form-field,
+.form-field.is-disabled,
+.is-disabled .form-field {
+  border: 1px solid $color-primary;
+  pointer-events: none;
+  opacity: .5;
+}

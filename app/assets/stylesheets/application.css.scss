@@ -1,0 +1,24 @@
+@import
+
+// Utils
+  "bourbon",
+  "neat",
+  "helpers/variables",
+  "helpers/functions",
+  "helpers/placeholders",
+
+// Vendors
+  "normalize-css/normalize",
+  "font-awesome/scss/font-awesome",
+
+// Components
+  'components/geral',
+  'components/container',
+  'components/viewport',
+  'components/typography',
+  'components/buttons',
+  'components/forms',
+
+// Widgets
+  'widgets/header',
+  'widgets/footer';

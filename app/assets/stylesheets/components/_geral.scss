@@ -1,0 +1,159 @@
+// ==========================================================================
+// Geral
+// ==========================================================================
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $color-text;
+}
+
+html {
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+  line-height: $main-line-height;
+}
+
+:active,
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  li {
+    list-style: none;
+  }
+}
+
+li {
+  list-style: disc inside;
+}
+
+img {
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+::selection {
+  background: $color-primary;
+  color: $color-white;
+  text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+form,
+fieldset,
+p,
+strong,
+span,
+li,
+ul,
+ol,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// ==========================================================================
+// Print Styles
+// ==========================================================================
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

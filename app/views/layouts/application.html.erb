@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rails Start</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="">
+    <meta name="Publisher" content="">
+    <meta name="owner" content="">
+    <meta name="copyright" content="">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="site">
+    <meta property="og:description" content="">
+
+    <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'modernizr/modernizr', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <%= render 'shared/flash' %>
+    <%= render 'shared/header' %>
+
+    <%= yield %>
+
+    <%= render 'shared/footer' %>
+    <%= render 'shared/analytics' %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>

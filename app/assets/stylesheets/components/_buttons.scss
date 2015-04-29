@@ -1,0 +1,68 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.btn-group {
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin: 0 auto;
+  display: inline-block;
+  background: $color-white;
+  color: $color-text;
+  font-size: rem(14px);
+  min-width: 70px;
+  max-width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: rem(6px) rem(12px);
+  border-radius: 3px;
+  user-select: none;
+  transition: all 200ms;
+
+  &:hover,
+  &:active {
+    background: $color-gray-light;
+    color: $color-white;
+  }
+
+  &--primary {
+    color: $color-white;
+    background: $color-primary;
+
+    &:hover,
+    &:active {
+      background: $color-primary-dark;
+    }
+  }
+
+  &--secondary {
+    color: $color-white;
+    background: $color-secondary;
+
+    &:hover,
+    &:active {
+      background: $color-secondary-dark;
+    }
+  }
+
+  &--large {
+    font-size: rem(17px);
+    padding: rem(12px) rem(20px);
+  }
+
+  &--block {
+    font-size: rem(17px);
+    display: block;
+    width: 100%;
+    padding: rem(12px) 0;
+  }
+}

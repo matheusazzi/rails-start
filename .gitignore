@@ -1,0 +1,16 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore local uploads
+public/uploads
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+/config/database.yml
+.env
+
+.DS_Store
+node_modules/
+vendor/assets/bower_components/

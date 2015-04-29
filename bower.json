@@ -1,0 +1,22 @@
+{
+  "name": "Rails Start",
+  "private": true,
+  "authors": [
+    "Matheus Azzi <matheuslazzi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.2",
+    "jquery": "~2.1.3",
+    "jquery-ujs": "~1.0.2",
+    "modernizr": "~2.8.3",
+    "font-awesome": "~4.2.0"
+  }
+}
