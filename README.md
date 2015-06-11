@@ -24,17 +24,10 @@ Make a copy of the database configuration file:
 cp config/database.yml.example config/database.yml
 ```
 
-Install the database.
+Install the database and the initial data.
 
 ```
-./bin/rake db:create
-./bin/rake db:migrate
-```
-
-Add the initial data:
-
-```
-./bin/rake db:seed
+./bin/rake db:setup
 ```
 
 #### Bower
