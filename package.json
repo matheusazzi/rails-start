@@ -1,0 +1,24 @@
+{
+  "name": "rails-start",
+  "version": "1.0.0",
+  "description": "== README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusazzi/rails-start.git"
+  },
+  "author": "Matheus Azzi <matheuslazzi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusazzi/rails-start/issues"
+  },
+  "homepage": "https://github.com/matheusazzi/rails-start#readme",
+  "devDependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1",
+    "browserify-incremental": "^3.0.1"
+  }
+}

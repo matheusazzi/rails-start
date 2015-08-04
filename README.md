@@ -6,7 +6,7 @@
 ## Dependencies
 
  * Ruby 2.2.2
- * Rails 4.2.1
+ * Rails 4.2.3
  * PostgreSQL 9.3
  * Bower
 
@@ -54,6 +54,15 @@ If that fails, or if you’re on a different platform, check the [capybara-webki
 As for right now we are using heroku as a staging deployment server.
 Once the local repo is configured, and the heroku remote repo is in place,
 the local repository can be used to make the deploy by:
+
+#### Deploying to Heroku
+
+You'll have to add custom buildpacks that run bundle and npm install on the target machine.
+
+```
+$ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-nodejs.git
+$ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-ruby.git
+```
 
 Commit and push to repository all your changes, then:
 

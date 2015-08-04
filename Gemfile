@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
 
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 
 gem 'jbuilder'
 gem 'unicorn'
@@ -17,7 +17,7 @@ gem 'neat'
 gem 'autoprefixer-rails'
 gem 'csso-rails'
 gem 'uglifier'
-gem 'coffee-rails'
+gem 'browserify-rails'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -25,8 +25,9 @@ group :development, :test do
   gem 'jasmine-rails'
   gem 'pry-rails'
   gem 'byebug'
-  gem 'web-console'
+  gem 'web-console', '~> 2.0'
   gem 'ffaker'
+  gem 'spring'
 end
 
 group :development do
@@ -34,8 +35,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'dotenv-rails'
-  gem 'quiet_assets'
-  gem 'spring'
   gem 'thin'
 end
 
