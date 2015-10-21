@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.2.3'
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 
 gem 'jbuilder'
 gem 'unicorn'
@@ -15,7 +15,6 @@ gem 'sass-rails', '~> 5.0.0'
 gem 'bourbon'
 gem 'neat'
 gem 'autoprefixer-rails'
-gem 'csso-rails'
 gem 'uglifier'
 gem 'browserify-rails'
 

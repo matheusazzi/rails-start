@@ -1,0 +1,39 @@
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+// Usage
+//
+// @include breakpoint-sm-min
+//
+//
+
+$breakpoints: ('xs', 'sm', 'md', 'lg', 'xl');
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1120px;
+$breakpoint-xl: 1280px;
+
+$breakpoint-xs-min: 0;
+$breakpoint-sm-min: rem($breakpoint-xs + 1px);
+$breakpoint-md-min: rem($breakpoint-sm + 1px);
+$breakpoint-lg-min: rem($breakpoint-md + 1px);
+$breakpoint-xl-min: rem($breakpoint-lg + 1px);
+
+$queries: (
+  xs-min: $breakpoint-xs-min,
+  xs-max: $breakpoint-xs,
+
+  sm-min: $breakpoint-sm-min,
+  sm-max: $breakpoint-sm,
+
+  md-min: $breakpoint-md-min,
+  md-max: $breakpoint-md,
+
+  lg-min: $breakpoint-lg-min,
+  lg-max: $breakpoint-lg,
+
+  xl-min: $breakpoint-xl-min
+);

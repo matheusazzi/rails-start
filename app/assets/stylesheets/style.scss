@@ -1,8 +1,6 @@
 @import
 
 // Utils
-  'bourbon',
-  'neat',
   'helpers/general',
   'helpers/functions',
   'helpers/breakpoints',
@@ -13,8 +11,9 @@
   'helpers/utils',
 
 // Vendors
-  'normalize-css/normalize',
-  'font-awesome/scss/font-awesome',
+  '../vendor/modularized-normalize-scss/normalize',
+  '../vendor/bourbon/app/assets/stylesheets/bourbon',
+  '../vendor/neat/app/assets/stylesheets/neat',
 
 // Base
   'base/general',

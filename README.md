@@ -5,8 +5,8 @@
 
 ## Dependencies
 
- * Ruby 2.2.2
- * Rails 4.2.3
+ * Ruby 2.2.3
+ * Rails 4.2.4
  * PostgreSQL 9.3
  * Bower
 

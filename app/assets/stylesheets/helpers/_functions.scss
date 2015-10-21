@@ -5,3 +5,7 @@
 @function rem($px, $base: $main-font-size) {
   @return ($px / $base) * 1rem;
 }
+
+@function image-path($file-name) {
+  @return url(#{$asset-path + $file-name});
+}

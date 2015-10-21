@@ -17,6 +17,14 @@ h6, .h6 { font-size: $font-size-h6; }
 a,
 .link {
   color: $color-primary;
+  transition: color 250ms ease-out;
+  text-decoration: $link-decoration;
+
+  &:hover,
+  &:active {
+    color: $color-primary-dark;
+    text-decoration: $link-decoration-hover;
+  }
 }
 
 p,
