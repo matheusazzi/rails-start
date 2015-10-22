@@ -8,15 +8,21 @@
  * Ruby 2.2.3
  * Rails 4.2.4
  * PostgreSQL 9.3
- * Bower
+ * Node 0.10 or higher
 
 ## Installation
 
+*There's a setup file, so you can just:*
+
 ```
-git clone https://matheusazzi@bitbucket.org/matheusazzi/store.git
-cd store
-bundle install
+git clone https://github.com/matheusazzi/rails-start.git
+cd rails-start
+./bin/setup
 ```
+
+If the setup doesn't work you can follow this steps:
+
+#### Database
 
 Make a copy of the database configuration file:
 
